@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b62">
+<title>Manik Typing Test — সরকারি চাকরির টাইপিং প্রস্তুতি</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#f3f6fa;--panel:#fff;--text:#172536;--muted:#66768a;--line:#dce4ed;--primary:#145b91;--primary2:#0e416a;--good:#16834b;--bad:#c53535;--warn:#9a6400;--soft:#eaf3fb;--shadow:0 8px 26px #1438580c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:"Hind Siliguri",system-ui,sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:10px 15px;font-weight:600;background:var(--primary);color:white}button:hover{background:var(--primary2)}button:disabled{opacity:.45;cursor:not-allowed}.secondary{background:#e8eef5;color:#203b54}.secondary:hover{background:#dce6f0}.danger{background:#b52b35}.danger:hover{background:#92212a}.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}.wrap{max-width:1180px;margin:auto;padding:20px}.top{background:linear-gradient(120deg,#0f3557,#17689c);color:white;padding:22px 0}.top-inner{max-width:1180px;margin:auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;gap:12px;align-items:center}.logo{width:48px;height:48px;border-radius:14px;background:#ffffff1c;display:grid;place-items:center;font-size:25px}.brand h1{font-size:23px;margin:0}.brand p{margin:2px 0 0;color:#d6e9f8;font-size:14px}.top small{color:#d6e9f8}.nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.nav button{background:#e4edf5;color:#23415c}.nav button.active{background:var(--primary);color:white}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);min-width:0}.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-7{grid-column:span 7}.span-6{grid-column:span 6}.span-5{grid-column:span 5}.span-4{grid-column:span 4}.title{font-size:20px;margin:0 0 12px}.muted{color:var(--muted)}.small{font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{border:1px solid var(--line);padding:14px;border-radius:12px;background:#fbfdff}.stat b{display:block;font-size:25px;color:var(--primary)}.stat span{color:var(--muted);font-size:13px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:flex;flex-direction:column;gap:5px}.field label{font-weight:600;font-size:14px}.field input,.field select,.field textarea{width:100%;border:1px solid #cbd6e2;border-radius:9px;padding:10px 11px;background:white;color:var(--text)}.field textarea{min-height:105px;resize:vertical}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.notice{padding:12px 14px;border-radius:10px;background:#fff7e3;border:1px solid #f1dfaa;color:#664b0b;font-size:14px}.blue-note{background:var(--soft);border:1px solid #d3e5f5;color:#214e72;padding:12px;border-radius:10px;font-size:14px}.hidden{display:none!important}.test-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.timer{font-size:32px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--primary)}.passage{border:1px solid var(--line);background:#fbfdff;border-radius:12px;padding:18px;font-size:21px;line-height:2;white-space:pre-wrap;overflow-wrap:anywhere;min-height:130px;max-height:260px;overflow:auto;letter-spacing:.1px}.passage .correct{color:#17834d}.passage .wrong{background:#ffe1e1;color:#a51e28;text-decoration:underline;text-decoration-color:#c53535}.passage .current{background:#d7ebff;outline:2px solid #9ac8f1;border-radius:2px}.passage .pending{color:#8a96a5}.typingbox{width:100%;min-height:145px;padding:14px;border:2px solid #b9cad9;border-radius:12px;font-size:20px;line-height:1.8;resize:vertical;background:white;color:#172536}.typingbox:focus{outline:3px solid #d8eafa;border-color:#4387b7}.metric-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:14px 0}.metric{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:10px}.metric strong{display:block;font-size:21px}.metric span{font-size:12px;color:var(--muted)}.pill{display:inline-block;padding:4px 9px;border-radius:99px;font-size:12px;font-weight:700;background:#e9eef4;color:#344b60}.pill.good{background:#dff5e8;color:#11643a}.pill.bad{background:#ffe5e5;color:#a22020}.pill.warn{background:#fff1cc;color:#7b5200}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f5f8fb}td{overflow-wrap:anywhere}.tablewrap{overflow-x:auto}.progress{height:8px;background:#e6edf4;border-radius:99px;overflow:hidden}.progress span{display:block;height:100%;background:#208454}.footer{text-align:center;color:var(--muted);font-size:13px;padding:28px 10px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}.rule{border-top:1px solid var(--line);margin:16px 0}.kbd{font-family:monospace;background:#edf1f5;border:1px solid #d7dfe7;border-radius:5px;padding:2px 5px}.empty{text-align:center;padding:30px;color:var(--muted)}.inline-check{display:flex;align-items:center;gap:8px}.inline-check input{width:auto}.result-big{font-size:28px;font-weight:700}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#152c41;color:white;padding:11px 16px;border-radius:10px;z-index:99;box-shadow:var(--shadow);max-width:90vw}.danger-text{color:var(--bad)}@media(max-width:800px){.span-8,.span-7,.span-6,.span-5,.span-4{grid-column:span 12}.stats{grid-template-columns:repeat(2,1fr)}.metric-row{grid-template-columns:repeat(2,1fr)}.top-inner{align-items:flex-start;flex-direction:column}.wrap{padding:13px}.card{padding:14px}.passage{font-size:19px}.typingbox{font-size:18px}.formgrid{grid-template-columns:1fr}}@media print{body{background:white}.top,.nav,.no-print,.footer{display:none!important}.wrap{max-width:none;padding:0}.card{box-shadow:none;border:0;padding:0}.print-only{display:block!important}button{display:none!important}table{font-size:11px}.grid{display:block}.card{margin-bottom:10px}}
+.review{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:20px;line-height:2.1;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--panel)}
+.w-bad{color:#d62839;background:rgba(214,40,57,.13);border-radius:5px;padding:0 4px;font-weight:700;text-decoration:underline}
+.w-miss{color:#d62839;border:1px dashed #d62839;border-radius:5px;padding:0 4px;font-size:.85em}
+.w-tail{color:var(--muted)}
+.misslist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.misslist span{border:1px solid var(--line);border-radius:8px;padding:3px 9px;font-size:15px}
+.misslist b{color:#d62839}
+@media print{.w-bad,.w-miss{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.settings-card{max-width:760px;margin:0 auto;padding:0;overflow:hidden}
+.set-head{display:flex;align-items:center;gap:12px;padding:20px 24px;border-bottom:1px solid var(--line)}
+.set-head h2{margin:0;font-size:21px}
+.set-ico{width:38px;height:38px;border-radius:11px;background:var(--soft);color:var(--text);display:grid;place-items:center;flex:none}
+.set-sec{padding:18px 24px 8px;border-bottom:1px solid var(--line)}
+.set-sec h3{margin:0 0 6px;font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.03em}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.set-row+.set-row{border-top:1px solid var(--line)}
+.set-row .lbl{font-weight:600;cursor:default}
+.unit-input{position:relative;width:160px;flex:none}
+.unit-input input{width:100%;border:1px solid #cbd6e2;border-radius:10px;padding:10px 58px 10px 12px;background:var(--panel);color:var(--text)}
+.unit-input input:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:transparent}
+.unit-input span{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;font-weight:700;pointer-events:none}
+.seg{display:inline-flex;gap:2px;padding:3px;background:var(--soft);border-radius:12px;flex-wrap:wrap}
+.seg button{background:transparent;color:var(--muted);padding:7px 15px;border-radius:9px;font-size:14px}
+.seg button:hover{background:transparent;color:var(--text)}
+.seg button.on,.seg button.on:hover{background:var(--panel);color:var(--text);box-shadow:0 1px 4px #1438581f}
+.switch{position:relative;display:block;width:46px;height:26px;flex:none}
+.switch input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer;z-index:1}
+.switch i{position:absolute;inset:0;background:#c3cfdb;border-radius:999px;transition:background .2s}
+.switch i::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #0003;transition:transform .2s}
+.switch input:checked+i{background:var(--primary)}
+.switch input:checked+i::after{transform:translateX(20px)}
+.switch input:focus-visible+i{outline:2px solid var(--primary);outline-offset:2px}
+.set-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 24px}
+.set-foot button{min-width:130px}
+@media(max-width:560px){.set-row.inline{flex-direction:row;align-items:center}.set-head,.set-sec,.set-foot{padding-left:16px;padding-right:16px}.set-row{flex-direction:column;align-items:flex-start;gap:8px}.unit-input{width:100%}.seg{width:100%}.seg button{flex:1;padding:8px 6px}.set-foot button{flex:1;min-width:0}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand"><div class="logo">⌨</div><div><h1>Manik Typing Test</h1><p>সরকারি চাকরির বাংলা ও ইংরেজি টাইপিং প্রস্তুতি</p></div></div>
+    <div><small>অফলাইনেও মূল টাইপিং পরীক্ষা ব্যবহারযোগ্য</small></div>
+  </div>
+</header>
+<main class="wrap">
+  <nav class="nav no-print" id="nav">
+    <button class="active" data-page="home">ড্যাশবোর্ড</button>
+    <button data-page="test">টাইপিং পরীক্ষা</button>
+    <button data-page="history">পরীক্ষার ইতিহাস</button>
+    <button data-page="settings">সেটিংস</button>
+    <button data-page="help">নির্দেশিকা</button>
+  </nav>
+  <section id="page-home" class="page">
+    <div class="grid">
+      <div class="card span-12">
+        <div class="section-head"><div><h2 class="title">স্বাগতম!</h2><div class="muted">অফিস সহকারী কাম কম্পিউটার মুদ্রাক্ষরিক পদের প্রস্তুতির জন্য অনুশীলন শুরু করুন।</div></div><button onclick="showPage('test')">পরীক্ষা শুরু করুন →</button></div>
+        <div class="notice">দ্রষ্টব্য: এটি অনুশীলনের সফটওয়্যার। নিয়োগবিধি প্রতিষ্ঠানভেদে আলাদা হতে পারে। সংশ্লিষ্ট সরকারি বিজ্ঞপ্তি যাচাই না করে কোনো ফলাফলকে সরকারি পরীক্ষার নিশ্চয়তা হিসেবে ধরবেন না।</div>
+      </div>
+      <div class="card span-12"><h2 class="title">আপনার অগ্রগতি</h2><div class="stats" id="dashboardStats"></div></div>
+      <div class="card span-7"><h2 class="title">দ্রুত শুরু</h2><div class="formgrid">
+        <div class="field"><label for="quickLang">ভাষা</label><select id="quickLang"><option value="bn">বাংলা</option><option value="en">ইংরেজি</option></select></div>
+        <div class="field"><label for="quickDuration">সময়</label><select id="quickDuration"><option value="1">১ মিনিট</option><option value="2">২ মিনিট</option><option value="3">৩ মিনিট</option><option value="5">৫ মিনিট</option><option value="10" selected>১০ মিনিট</option></select></div>
+        <div class="field"><label for="quickPassage">প্যাসেজ</label><select id="quickPassage"></select></div>
+      </div><div class="actions"><button onclick="startQuick()">টাইপিং শুরু</button></div></div>
+      <div class="card span-5"><h2 class="title">পরীক্ষার লক্ষ্য</h2><div class="stats" style="grid-template-columns:repeat(2,1fr)"><div class="stat"><b id="goalWpm">২০</b><span>WPM লক্ষ্য (স্পেসসহ)</span></div><div class="stat"><b id="goalAcc">৯৫%</b><span>Accuracy লক্ষ্য</span></div></div><div class="actions" style="margin:8px 0 12px"><button class="secondary" onclick="showPage('settings')">লক্ষ্য পরিবর্তন</button></div></div>
+      <div class="card span-12"><h2 class="title">সাম্প্রতিক পরীক্ষা</h2><div id="recentResults"></div></div>
+    </div>
+  </section>
+  <section id="page-test" class="page hidden">
+    <div class="card">
+      <div class="section-head"><div><h2 class="title">টাইপিং পরীক্ষা</h2></div><span id="testStatus" class="pill">প্রস্তুত</span></div>
+      <div id="setupPanel">
+        <div class="formgrid">
+          <div class="field"><label for="testLang">ভাষা</label><select id="testLang"><option value="bn">বাংলা</option><option value="en">ইংরেজি</option></select></div>
+          <div class="field"><label for="testDuration">সময়</label><select id="testDuration"><option value="1">১ মিনিট</option><option value="2">২ মিনিট</option><option value="3">৩ মিনিট</option><option value="5">৫ মিনিট</option><option value="10" selected>১০ মিনিট</option></select></div>
+          <div class="field"><label for="testPassage">প্যাসেজ</label><select id="testPassage"></select></div>
+          <div class="field"><label for="testFontSize">প্যাসেজের ফন্ট সাইজ</label><select id="testFontSize"><option value="18">ছোট</option><option value="21" selected>মাঝারি</option><option value="25">বড়</option><option value="29">অতি বড়</option></select></div>
+        </div>
+        <div class="actions"><button id="beginBtn" onclick="beginTest()">পরীক্ষা শুরু করুন</button><button class="secondary" onclick="loadRandomPassage()">র‍্যান্ডম প্যাসেজ</button></div>
+      </div>
+      <div id="activePanel" class="hidden">
+        <div class="test-head"><div><div class="muted small" id="activeInfo"></div><div class="timer" id="timer">10:00</div></div><div class="actions no-print" style="margin:0"><button class="danger" onclick="finishTest('manual')">পরীক্ষা শেষ</button></div></div>
+        <div class="field"><label>টাইপ করার প্যাসেজ</label><div id="passageDisplay" class="passage" tabindex="0"></div></div>
+        <div class="field" style="margin-top:13px"><label for="typingInput">এখানে টাইপ করুন</label><textarea id="typingInput" class="typingbox" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="প্যাসেজ দেখে এখানে টাইপ করুন..."></textarea></div>
+      </div>
+      <div id="resultPanel" class="hidden"></div>
+    </div>
+  </section>
+  <section id="page-history" class="page hidden">
+    <div class="card"><div class="section-head"><h2 class="title">পরীক্ষার ইতিহাস</h2><div class="actions no-print" style="margin:0"><button class="secondary" onclick="window.print()">প্রিন্ট</button></div></div>
+      <div class="formgrid no-print"><div class="field"><label for="historyLang">ভাষা ফিল্টার</label><select id="historyLang" onchange="renderHistory()"><option value="all">সব ভাষা</option><option value="bn">বাংলা</option><option value="en">ইংরেজি</option></select></div><div class="field"><label for="historyOutcome">ফলাফল</label><select id="historyOutcome" onchange="renderHistory()"><option value="all">সব ফলাফল</option><option value="pass">লক্ষ্য পূরণ</option><option value="fail">লক্ষ্য পূরণ হয়নি</option></select></div></div>
+      <div id="historyTable" style="margin-top:14px"></div>
+      <div class="actions no-print"><button class="danger" onclick="clearHistory()">সব ইতিহাস মুছুন</button></div>
+    </div>
+  </section>
+  <section id="page-passages" class="page hidden">
+    <div class="card" id="adminLoginCard" style="max-width:520px">
+      <h2 class="title">অ্যাডমিন লগইন</h2>
+      
+      <div class="notice hidden" id="adminBackendNote">⚠ BACKEND_URL সেট করা হয়নি। index.html-এর উপরের দিকে Google Apps Script Web App-এর লিংক বসান (SETUP.md দেখুন)।</div>
+      <div class="field"><label for="adminPass">পাসওয়ার্ড</label><input id="adminPass" type="password" autocomplete="current-password" onkeydown="if(event.key==='Enter')adminLogin()"/></div>
+      <div class="actions"><button id="adminLoginBtn" onclick="adminLogin()">লগইন</button></div>
+    </div>
+    <div class="card hidden" id="adminPanel">
+      <div class="section-head"><div><h2 class="title">প্যাসেজ লাইব্রেরি (অ্যাডমিন)</h2><div class="muted small" id="adminVersion"></div></div>
+        <div class="actions" style="margin:0"><button onclick="newPassage()">+ নতুন প্যাসেজ</button><button class="secondary" onclick="adminRefresh()">রিফ্রেশ</button><button class="secondary" onclick="togglePwForm()">পাসওয়ার্ড পরিবর্তন</button><button class="secondary" onclick="adminLogout()">লগআউট</button></div></div>
+      <div id="pwForm" class="hidden rule"><h3>পাসওয়ার্ড পরিবর্তন</h3><div class="formgrid"><div class="field"><label for="pwOld">বর্তমান পাসওয়ার্ড</label><input id="pwOld" type="password" autocomplete="current-password"/></div><div class="field"><label for="pwNew">নতুন পাসওয়ার্ড (কমপক্ষে ৮ অক্ষর)</label><input id="pwNew" type="password" autocomplete="new-password"/></div><div class="field"><label for="pwNew2">নতুন পাসওয়ার্ড আবার</label><input id="pwNew2" type="password" autocomplete="new-password"/></div></div><div class="actions"><button onclick="changePw()">পাসওয়ার্ড বদলান</button><button class="secondary" onclick="togglePwForm()">বাতিল</button></div></div>
+      <div id="passageList"></div>
+      <div id="passageEditor" class="hidden rule"><h3 id="passageEditorTitle">নতুন প্যাসেজ</h3><div class="formgrid"><div class="field"><label for="editTitle">নাম</label><input id="editTitle" maxlength="100"/></div><div class="field"><label for="editLang">ভাষা</label><select id="editLang"><option value="bn">বাংলা</option><option value="en">ইংরেজি</option></select></div></div><div class="field" style="margin-top:12px"><label for="editText">প্যাসেজের লেখা</label><textarea id="editText" style="min-height:180px"></textarea></div><div class="actions"><button id="savePassageBtn" onclick="savePassage()">সংরক্ষণ</button><button class="secondary" onclick="cancelPassageEdit()">বাতিল</button></div><input type="hidden" id="editId"/></div>
+    </div>
+  </section>
+  <section id="page-settings" class="page hidden">
+    <div class="card settings-card">
+      <div class="set-head"><span class="set-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h8M18 6h2M4 12h2M12 12h8M4 18h10M20 18h0"/><circle cx="15" cy="6" r="2.2"/><circle cx="9" cy="12" r="2.2"/><circle cx="17" cy="18" r="2.2"/></svg></span><h2>সেটিংস</h2></div>
+      <div class="set-sec">
+        <h3>পরীক্ষার লক্ষ্য</h3>
+        <div class="set-row"><label class="lbl" for="practiceWpm">লক্ষ্য গতি</label><div class="unit-input"><input id="practiceWpm" type="number" min="1" max="300" step="any" inputmode="decimal" oninput="updateDirty()"/><span>WPM</span></div></div>
+        <div class="set-row"><label class="lbl" for="practiceAccuracy">ন্যূনতম Accuracy</label><div class="unit-input"><input id="practiceAccuracy" type="number" min="1" max="100" step="any" inputmode="decimal" oninput="updateDirty()"/><span>%</span></div></div>
+      </div>
+      <div class="set-sec">
+        <h3>প্রদর্শন</h3>
+        <div class="set-row"><span class="lbl">থিম</span><div class="seg" id="themeSeg" data-value="light"><button type="button" data-v="light" onclick="pickSeg(this)">লাইট</button><button type="button" data-v="dark" onclick="pickSeg(this)">ডার্ক</button></div></div>
+        <div class="set-row"><span class="lbl">প্যাসেজের ফন্ট সাইজ</span><div class="seg" id="fontSeg" data-value="21"><button type="button" data-v="18" onclick="pickSeg(this)">ছোট</button><button type="button" data-v="21" onclick="pickSeg(this)">মাঝারি</button><button type="button" data-v="25" onclick="pickSeg(this)">বড়</button><button type="button" data-v="29" onclick="pickSeg(this)">অতি বড়</button></div></div>
+      </div>
+      <div class="set-sec">
+        <h3>পরীক্ষার নিয়ম</h3>
+        <div class="set-row inline"><label class="lbl" for="pasteBlock">পরীক্ষায় Paste বন্ধ রাখুন</label><label class="switch"><input id="pasteBlock" type="checkbox" onchange="updateDirty()"/><i></i></label></div>
+      </div>
+      <div class="set-foot"><button type="button" class="ghost" onclick="resetSettings()">ডিফল্টে ফেরত</button><button type="button" id="saveSettingsBtn" onclick="saveSettings()" disabled>সংরক্ষণ করুন</button></div>
+    </div>
+  </section>
+  <section id="page-help" class="page hidden">
+    <div class="card"><h2 class="title">ব্যবহার নির্দেশিকা</h2>
+      <h3>পরীক্ষা দেওয়ার নিয়ম</h3><ol><li>ভাষা, সময় ও প্যাসেজ নির্বাচন করুন।</li><li>বাংলা পরীক্ষার জন্য কম্পিউটারে আপনার বাংলা ইনপুট পদ্ধতি চালু করুন।</li><li>“পরীক্ষা শুরু করুন” চাপুন। প্রথম অক্ষর টাইপ করার সঙ্গে সঙ্গে সময় গণনা শুরু হবে।</li><li>সময় শেষ হলে বা প্যাসেজ টাইপ করা শেষ হলে ফলাফল স্বয়ংক্রিয়ভাবে দেখাবে (যতটুকু সময় লেগেছে সেই সময়ের ভিত্তিতে)। প্রয়োজনে “পরীক্ষা শেষ” চাপতে পারেন।</li><li>ফলাফল ইতিহাসে সংরক্ষিত হবে।</li></ol>
+      <h3>গতি গণনা</h3><p>CPM = টাইপ করা অক্ষর (স্পেসসহ) ÷ সময় (মিনিট)। WPM = স্পেসসহ টাইপ করা অক্ষর ÷ ৫ ÷ সময় (মিনিট)। Word-based WPM = সঠিক শব্দ ÷ সময় (মিনিট)। সব ফলাফল রাউন্ড না করে দুই দশমিক পর্যন্ত দেখানো হয়।</p>
+      <h3>Accuracy ও পাস/ফেল</h3><p>Accuracy = সঠিক শব্দ ÷ (সঠিক + ভুল + অতিরিক্ত + বাদ পড়া শব্দ) × ১০০। স্পেসসহ WPM এবং Accuracy—দুটোই আপনার লক্ষ্যের সমান বা বেশি হলে পাস। ফলাফলে ভুল শব্দগুলো লাল রঙে দেখানো হয়।</p>
+      <h3>সীমাবদ্ধতা</h3><ul><li>এই সফটওয়্যার সরকারি কর্তৃপক্ষের অনুমোদিত নয়।</li><li>সরকারি বিধিমালা প্রতিষ্ঠান ও নিয়োগবিজ্ঞপ্তি অনুযায়ী যাচাই করতে হবে।</li><li>Bijoy/Avro কোনটি সক্রিয় তা ব্রাউজার নির্ভরযোগ্যভাবে শনাক্ত করতে পারে না।</li></ul>
+      <h3>কিবোর্ড শর্টকাট</h3><p><span class="kbd">Ctrl</span> + <span class="kbd">Enter</span> পরীক্ষার সময় টাইপিং বক্সে কাজ করে না; নিরাপদে পরীক্ষা নিয়ন্ত্রণ করতে দৃশ্যমান বাটন ব্যবহার করুন।</p>
+    </div>
+  </section>
+</main>
+<footer class="footer">Manik Typing Test · ব্যক্তিগত অনুশীলনের জন্য তৈরি · সরকারি অনুমোদিত সফটওয়্যার নয়<div id="dataStatus" style="margin-top:4px;font-size:12px"></div></footer>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+// ====== ব্যাকএন্ড (Google Apps Script) ======
+// Web App deploy করে পাওয়া লিংকটি (…/exec) এখানে বসান। ফাঁকা থাকলে শুধু নমুনা প্যাসেজ চলবে, অ্যাডমিন প্যানেল কাজ করবে না।
+const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbzhPRLf56BrITwetwCWPietIzdDEISooj8l48oIAcg_KLkQZNYOODAmHFwQicFvtBfW/exec';
+const STORE = {history:'manikTypingHistory_v1',settings:'manikTypingSettings_v1',appearance:'manikTypingAppearance_v1',backend:'manikTypingBackend_v1'};
+const ADMIN_KEY = 'manikAdminToken';
+const DEFAULT_SETTINGS = {officialWpm:20,officialMinutes:10,officialScore:80,officialAverage:50,officialMaxError:5,officialMethod:'five',officialSource:'',officialRuleName:'',officialVerified:false};
+const DEFAULT_APPEARANCE = {theme:'light',font:21,pasteMode:'official'};
+// গণনার নিয়ম — সার্ভারের Config শিট থেকে আসে; সংযোগ না থাকলে এই মান ব্যবহার হয়
+const DEFAULT_CFG = {charsPerWord:5,skipLookahead:5,extraLookahead:5,defaultWpm:20,defaultAccuracy:95,decimals:2,
+  includeSkippedInAccuracy:true,countSpaceInMistakes:true,ignorePartialLastWord:true,passUsesRounded:false};
+// সার্ভার থেকে প্যাসেজ আনা না গেলে (প্রথমবার, অফলাইন) এই নমুনা দুটি ব্যবহার হবে
+const FALLBACK_PASSAGES = [
+ {
+  "id": "bn1",
+  "lang": "bn",
+  "title": "অফিসের দৈনন্দিন কার্যক্রম",
+  "text": "একটি সরকারি অফিসে নিয়মিতভাবে বিভিন্ন ধরনের প্রশাসনিক কাজ সম্পন্ন করা হয়। অফিস সহকারীকে নথিপত্র সাজানো, চিঠিপত্র প্রস্তুত করা, তথ্য সংরক্ষণ এবং প্রয়োজনীয় কাগজপত্র যথাসময়ে সংশ্লিষ্ট কর্মকর্তার কাছে পৌঁছে দেওয়ার দায়িত্ব পালন করতে হয়। প্রতিটি কাজ সতর্কতা ও দায়িত্বশীলতার সঙ্গে সম্পন্ন করা প্রয়োজন।"
+ },
+ {
+  "id": "en1",
+  "lang": "en",
+  "title": "Office Administration",
+  "text": "An office assistant helps maintain records, prepare documents, organize files, and deliver papers to the appropriate section. Every document should be handled carefully and stored in the correct place. Clear communication and regular attention to detail help an office complete its daily work on time."
+ }
+];
+let CFG = {...DEFAULT_CFG};
+let passages = FALLBACK_PASSAGES.map(p=>({...p}));
+let backendMeta = {version:'',state:'none'};
+let adminToken = (()=>{try{return sessionStorage.getItem(ADMIN_KEY)||''}catch(e){return ''}})();
+const D = ()=>CFG.decimals;
+function toBool(v,def){if(typeof v==='boolean')return v;if(typeof v==='number')return v!==0;if(typeof v==='string'){const t=v.trim().toLowerCase();if(['true','yes','1','হ্যাঁ'].includes(t))return true;if(['false','no','0','না'].includes(t))return false}return def}
+function toNum(v,def,min,max,int){const n=typeof v==='number'?v:parseFloat(String(v).trim());if(!Number.isFinite(n))return def;const c=Math.min(max,Math.max(min,n));return int?Math.round(c):c}
+function sanitizeCfg(raw){
+  raw=raw&&typeof raw==='object'?raw:{};const d=DEFAULT_CFG;
+  return {charsPerWord:toNum(raw.charsPerWord,d.charsPerWord,1,20,false),skipLookahead:toNum(raw.skipLookahead,d.skipLookahead,0,20,true),
+    extraLookahead:toNum(raw.extraLookahead,d.extraLookahead,0,20,true),defaultWpm:toNum(raw.defaultWpm,d.defaultWpm,1,300,false),
+    defaultAccuracy:toNum(raw.defaultAccuracy,d.defaultAccuracy,1,100,false),decimals:toNum(raw.decimals,d.decimals,0,4,true),
+    includeSkippedInAccuracy:toBool(raw.includeSkippedInAccuracy,d.includeSkippedInAccuracy),countSpaceInMistakes:toBool(raw.countSpaceInMistakes,d.countSpaceInMistakes),
+    ignorePartialLastWord:toBool(raw.ignorePartialLastWord,d.ignorePartialLastWord),passUsesRounded:toBool(raw.passUsesRounded,d.passUsesRounded)};
+}
+function sanitizePassages(arr){
+  if(!Array.isArray(arr))return [];
+  return arr.filter(p=>p&&typeof p.id==='string'&&p.id&&p.id.length<=64&&(p.lang==='bn'||p.lang==='en')&&typeof p.title==='string'&&p.title.trim()&&typeof p.text==='string'&&p.text.trim())
+    .map(p=>({id:p.id,lang:p.lang,title:p.title.trim(),text:p.text.trim()}));
+}
+(function restoreBackendCache(){
+  try{localStorage.removeItem('manikTypingPassages_v1')}catch(e){}
+  const c=readJSON(STORE.backend,null);
+  if(c&&typeof c==='object'){const list=sanitizePassages(c.passages);if(list.length){passages=list;CFG=sanitizeCfg(c.config);backendMeta={version:String(c.version||''),state:'cached'}}}
+})();
+let history = readJSON(STORE.history, []);
+let settings = {...DEFAULT_SETTINGS,...(readJSON(STORE.settings,{})||{})};
+let appearance = {...DEFAULT_APPEARANCE,...(readJSON(STORE.appearance,{})||{})};
+const BN_DIGITS='০১২৩৪৫৬৭৮৯';
+function toBn(n){return String(n).replace(/\d/g,d=>BN_DIGITS[d])}
+function goalWpm(){const v=Number(settings.practiceWpm);return v>0?v:CFG.defaultWpm}
+function goalAcc(){const v=Number(settings.practiceAccuracy);return v>0?v:CFG.defaultAccuracy}
+function renderGoals(){
+  const w=toBn(goalWpm()),a=toBn(goalAcc()),cpw=toBn(CFG.charsPerWord);
+  if($('goalWpm'))$('goalWpm').textContent=w;
+  if($('goalAcc'))$('goalAcc').textContent=a+'%';
+}
+let currentTest=null, timerHandle=null, remainingMs=0, endAt=0, paused=false, editorOriginalId=null;
+function readJSON(key,fallback){try{const x=localStorage.getItem(key);return x===null?fallback:JSON.parse(x)}catch(e){return fallback}}
+function saveJSON(key,value){localStorage.setItem(key,JSON.stringify(value))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.remove('hidden');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.add('hidden'),2600)}
+function showPage(page){
+  if(currentTest&&!currentTest.finished&&page!=='test')cancelActiveTest();
+  if(page!=='settings')applyTheme();
+  document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));
+  $('page-'+page).classList.remove('hidden');
+  document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===page));
+  if(page==='test'&&(!currentTest||currentTest.finished)){$('activePanel').classList.add('hidden');$('setupPanel').classList.remove('hidden')}
+  if(page==='home')renderDashboard();
+  if(page==='history')renderHistory();
+  if(page==='passages')renderAdmin();
+  if(page==='settings')loadSettingsUI();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function newTest(){
+  if(currentTest&&!currentTest.finished)return;
+  $('activePanel').classList.add('hidden');$('resultPanel').classList.add('hidden');$('setupPanel').classList.remove('hidden');
+  $('testStatus').textContent='প্রস্তুত';showPage('test');
+}
+function graphemes(s){if(typeof Intl!=='undefined'&&Intl.Segmenter){return [...new Intl.Segmenter('bn',{granularity:'grapheme'}).segment(s)].map(x=>x.segment)}return Array.from(s)}
+function words(s){return s.trim()?s.trim().split(/\s+/u).length:0}
+function levenshtein(a,b){const n=a.length,m=b.length;if(!n)return m;if(!m)return n;let prev=Array.from({length:m+1},(_,i)=>i),cur=new Array(m+1);for(let i=1;i<=n;i++){cur[0]=i;for(let j=1;j<=m;j++){cur[j]=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1))} [prev,cur]=[cur,prev]}return prev[m]}
+function compareText(expected,actual){const a=graphemes(expected),b=graphemes(actual);let i=0,j=0,sub=0,del=0,ins=0,correct=0;while(i<a.length&&j<b.length){if(a[i]===b[j]){correct++;i++;j++;continue}if(i+1<a.length&&a[i+1]===b[j]){del++;i++;continue}if(j+1<b.length&&a[i]===b[j+1]){ins++;j++;continue}sub++;i++;j++}del+=a.length-i;ins+=b.length-j;const distance=levenshtein(a,b), denom=Math.max(a.length,b.length,1);return {expected:a.length,typed:b.length,correct:Math.max(0,a.length-distance),sub,del,ins,distance,accuracy:Math.max(0,(1-distance/denom)*100),errorRate:distance/Math.max(a.length,1)*100,expectedG:a,typedG:b}}
+function fmt(n,d=1){return Number.isFinite(n)?n.toFixed(d):'0'}
+function getPassage(id,lang){return passages.find(p=>p.id===id&&p.lang===lang)||passages.find(p=>p.lang===lang)||passages[0]}
+function refreshPassageSelects(){for(const id of ['quickPassage','testPassage']){const sel=$(id),lang=$(id==='quickPassage'?'quickLang':'testLang'),old=sel.value;const list=passages.filter(p=>p.lang===lang.value);sel.innerHTML=list.map(p=>`<option value="${esc(p.id)}">${esc(p.title)}</option>`).join('');if(list.some(p=>p.id===old))sel.value=old;else if(list[0])sel.value=list[0].id}}
+$('quickLang').addEventListener('change',refreshPassageSelects);$('testLang').addEventListener('change',refreshPassageSelects);
+function startQuick(){
+  $('testLang').value=$('quickLang').value;
+  $('testDuration').value=$('quickDuration').value;
+  $('testPassage').value=$('quickPassage').value;
+  showPage('test');
+  beginTest();
+}
+function loadRandomPassage(){const lang=$('testLang').value,list=passages.filter(p=>p.lang===lang);if(list.length)$('testPassage').value=list[Math.floor(Math.random()*list.length)].id;toast('র‍্যান্ডম প্যাসেজ নির্বাচন করা হয়েছে')}
+function beginTest(){
+  if(currentTest&&!currentTest.finished)cancelActiveTest();
+  clearInterval(timerHandle);
+  const lang=$('testLang').value;
+  const duration=Number($('testDuration').value)||10;
+  const p=getPassage($('testPassage').value,lang);
+  const text=p&&p.text?p.text:'';
+  if(!text.trim()){toast('প্যাসেজ নির্বাচন করুন');return}
+  currentTest={
+    id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),
+    lang,profile:'practice',duration,passageId:p.id,passageTitle:p.title,
+    expected:text,startedAt:null,finished:false,paused:false,lastInput:''
+  };
+  remainingMs=duration*60000;endAt=0;paused=false;
+  $('setupPanel').classList.add('hidden');
+  $('resultPanel').classList.add('hidden');
+  $('activePanel').classList.remove('hidden');
+  $('testStatus').textContent='প্রথম অক্ষরের অপেক্ষায়';
+  $('activeInfo').textContent=`${lang==='bn'?'বাংলা':'ইংরেজি'} · ${duration} মিনিট · ${p.title}`;
+  $('typingInput').value='';
+  $('typingInput').disabled=false;
+  $('typingInput').placeholder='এখানে টাইপ করা শুরু করুন...';
+  $('typingInput').style.fontSize=($('testFontSize').value||appearance.font)+'px';
+  $('passageDisplay').textContent=text;
+  $('passageDisplay').style.fontSize=($('testFontSize').value||appearance.font)+'px';
+  $('timer').textContent=String(duration).padStart(2,'0')+':00';
+  $('typingInput').oninput=()=>{
+    if(!currentTest||currentTest.finished)return;
+    const value=$('typingInput').value;
+    if(!currentTest.startedAt&&graphemes(value).length>0){
+      currentTest.startedAt=new Date().toISOString();
+      endAt=Date.now()+remainingMs;
+      $('testStatus').textContent='চলছে';
+      timerHandle=setInterval(tick,200);
+    }
+    if(currentTest.startedAt&&isPassageComplete()){toast('প্যাসেজ টাইপ সম্পন্ন — পরীক্ষা শেষ হয়েছে');finishTest('complete')}
+  };
+  $('typingInput').onpaste=e=>{
+    if(appearance.pasteMode==='official'){e.preventDefault();toast('পরীক্ষায় Paste করা যাবে না')}
+  };
+  $('typingInput').focus();
+}
+function renderPassage(){
+  if(!currentTest)return;
+  $('passageDisplay').textContent=currentTest.expected;
+  $('passageDisplay').style.fontSize=($('testFontSize').value||appearance.font)+'px';
+}
+function elapsedMinutes(){return currentTest?Math.max((currentTest.duration*60000-remainingMs)/60000,1/60):1}
+function getMetrics(includeLast=false){
+  const input=$('typingInput').value;
+  let elapsedSeconds=0;
+  if(currentTest.startedAt)elapsedSeconds=Math.max(1,(currentTest.duration*60000-remainingMs)/1000);
+  const elapsed=elapsedSeconds/60;
+  const an=analyzeTyping(currentTest.expected,input,includeLast);
+  const typed=input.length;                           // typobd: টাইপিং বক্সের মোট দৈর্ঘ্য (স্পেসসহ)
+  const typedWithoutSpace=input.replace(/\s/gu,'').length;
+  const cpm=elapsed>0?typed/elapsed:0;
+  const fiveWpm=elapsed>0?typed/CFG.charsPerWord/elapsed:0;
+  const withoutSpaceWpm=elapsed>0?typedWithoutSpace/CFG.charsPerWord/elapsed:0;
+  const wordBasedWpm=elapsed>0?an.correct/elapsed:0;
+  return {input,typed,typedWithoutSpace,completedWords:an.totalWords,correctWords:an.correct,wrongWords:an.wrong,skippedWords:an.skipped,extraWords:an.extra,extraSpaces:an.spaces,
+    errors:an.mistakes,accuracy:an.accuracy,errorRate:an.denom>0?100-an.accuracy:0,elapsedSeconds,cpm,fiveWpm,withoutSpaceWpm,wordBasedWpm,
+    correct:typed,expected:currentTest.expected.length};
+}
+function isPassageComplete(){
+  if(!currentTest||!currentTest.startedAt)return false;
+  const an=analyzeTyping(currentTest.expected,$('typingInput').value,false);
+  if(!an.expectedCount)return false;
+  if(an.consumed>=an.expectedCount)return true;
+  return an.consumed===an.expectedCount-1&&an.tail!==null&&normWord(an.tail).length>=an.lastLen;
+}
+function updateTimer(){
+  const sec=Math.max(0,Math.ceil(remainingMs/1000));
+  $('timer').textContent=String(Math.floor(sec/60)).padStart(2,'0')+':'+String(sec%60).padStart(2,'0');
+}
+function tick(){
+  if(!currentTest||currentTest.finished||!currentTest.startedAt)return;
+  remainingMs=Math.max(0,endAt-Date.now());
+  updateTimer();
+  if(remainingMs<=0)finishTest('timeout');
+}
+function finishTest(reason){
+  if(!currentTest||currentTest.finished)return;
+  clearInterval(timerHandle);
+  if(reason==='manual'&&!confirm('পরীক্ষা শেষ করে ফলাফল দেখতে চান?')){if(currentTest.startedAt)timerHandle=setInterval(tick,200);return}
+  if(reason==='timeout')remainingMs=0;
+  else if(currentTest.startedAt)remainingMs=Math.max(0,endAt-Date.now());
+  else remainingMs=currentTest.duration*60000;
+  currentTest.finished=true;
+  currentTest.finishedAt=new Date().toISOString();
+  const includeLast=reason==='complete'||!CFG.ignorePartialLastWord;
+  const m=getMetrics(includeLast);
+  const targetWpm=goalWpm(),targetAccuracy=goalAcc();
+  const speed=m.fiveWpm; // মোট অর্জিত WPM (স্পেসসহ) — ভুলের হার বাদ দেওয়া হয় না
+  const speedPass=CFG.passUsesRounded?Math.round(speed)>=targetWpm:speed>=targetWpm-1e-9;
+  const accuracyPass=CFG.passUsesRounded?Math.round(m.accuracy)>=targetAccuracy:m.accuracy>=targetAccuracy-1e-9;
+  const pass=speedPass&&accuracyPass;
+  const result={
+    id:currentTest.id,date:currentTest.startedAt||currentTest.finishedAt,finishedAt:currentTest.finishedAt,
+    lang:currentTest.lang,profile:'practice',passageTitle:currentTest.passageTitle,duration:currentTest.duration,
+    elapsedSeconds:m.elapsedSeconds,typedText:m.input,expectedText:currentTest.expected,
+    correct:m.correct,expected:m.expected,typed:m.typed,typedWithoutSpace:m.typedWithoutSpace,
+    completedWords:m.completedWords,correctWords:m.correctWords,wrongWords:m.wrongWords,skippedWords:m.skippedWords,extraWords:m.extraWords,extraSpaces:m.extraSpaces,algo:2,wordBasedWpm:m.wordBasedWpm,withoutSpaceWpm:m.withoutSpaceWpm,
+    errors:m.errors,accuracy:m.accuracy,errorRate:m.errorRate,
+    cpm:m.cpm,fiveWpm:m.fiveWpm,speed,speedPass,accuracyPass,targetWpm,targetAccuracy,
+    pass,score:m.accuracy,reason,includeLast,method:'five'
+  };
+  history.unshift(result);history=history.slice(0,1000);saveJSON(STORE.history,history);
+  $('activePanel').classList.add('hidden');$('setupPanel').classList.remove('hidden');$('resultPanel').classList.remove('hidden');
+  $('testStatus').textContent='শেষ';renderResult(result);renderDashboard();
+}
+function normWord(w){
+  return w?String(w).replace(/[’‘]/g,"'").replace(/[“”]/g,'"').replace(/[—–]/g,'-').replace(/[\u200B-\u200D\uFEFF]/g,'').normalize('NFC'):'';
+}
+// typobd-এর শব্দ মেলানোর পদ্ধতি: সঠিক / ভুল / বাদ (skipped, সামনের ৫ শব্দ) / অতিরিক্ত (extra, সামনের ৫ শব্দ) / অতিরিক্ত স্পেস
+function analyzeTyping(expectedText,typedText,includeLast){
+  const kOrig=(expectedText||'').trim().split(/\s+/u).filter(Boolean);
+  const k=kOrig.map(normWord);
+  const typed=String(typedText||'').replace(/[—–]/g,'-').replace(/\s*\n\s*/g,' ');
+  const res={correct:0,wrong:0,skipped:0,extra:0,spaces:0,totalWords:0,denom:0,mistakes:0,accuracy:0,ops:[],consumed:0,expectedCount:k.length,lastLen:k.length?k[k.length-1].length:0,tail:null};
+  if(!typed.trim())return res;
+  const r=typed.trimEnd().split(/ /);
+  let tail=null;
+  if(!includeLast&&!/\s$/u.test(typedText)&&r.length&&r[r.length-1]!=='')tail=r.pop();
+  let m=0,a=0,u=0,C=0,i=0,l=0,O=0;const ops=[];
+  while(O<r.length){
+    const W=r[O];
+    if(W===''){i++;ops.push({t:'space'});O++;continue}
+    const c=normWord(W);
+    if(l<k.length&&c===k[l]){m++;ops.push({t:'ok',w:W});l++;O++;continue}
+    let d=false;
+    for(let n=1;n<=CFG.skipLookahead&&l+n<k.length;n++){
+      if(c===k[l+n]){for(let x=0;x<n;x++)ops.push({t:'skip',e:kOrig[l+x]});u+=n;ops.push({t:'ok',w:W});m++;l+=n+1;O++;d=true;break}
+    }
+    if(!d){
+      for(let x=1;x<=CFG.extraLookahead&&O+x<r.length;x++){
+        if(l<k.length&&normWord(r[O+x])===k[l]){for(let y=0;y<x;y++)ops.push({t:'extra',w:r[O+y]});C+=x;O+=x;d=true;break}
+      }
+    }
+    if(!d){
+      if(l<k.length){a++;ops.push({t:'wrong',w:W,e:kOrig[l]});l++;O++}
+      else{C++;ops.push({t:'extra',w:W});O++}
+    }
+  }
+  if(tail!==null){
+    if(l<k.length&&normWord(tail)===k[l]){m++;ops.push({t:'ok',w:tail});l++;tail=null}
+    else ops.push({t:'tail',w:tail});
+  }
+  Object.assign(res,{correct:m,wrong:a,skipped:u,extra:C,spaces:i,totalWords:m+a+C,denom:m+a+C+(CFG.includeSkippedInAccuracy?u:0),mistakes:a+u+C+(CFG.countSpaceInMistakes?i:0),ops,consumed:l,tail});
+  res.accuracy=res.denom>0?m/res.denom*100:0;
+  return res;
+}
+function splitWords(t){t=(t||'').trim();return t?t.split(/\s+/u):[]}
+function reviewHTML(r){
+  const typ=splitWords(r.typedText);
+  if(!typ.length)return '<div class="empty">কিছু টাইপ করা হয়নি।</div>';
+  const an=analyzeTyping(r.expectedText,r.typedText,r.includeLast??(r.reason==='complete'));
+  const parts=an.ops.map(o=>o.t==='ok'?esc(o.w):o.t==='wrong'?`<span class="w-bad" title="সঠিক শব্দ: ${esc(o.e)}">${esc(o.w)}</span>`:o.t==='extra'?`<span class="w-bad" title="অতিরিক্ত শব্দ">${esc(o.w)}</span>`:o.t==='skip'?`<span class="w-miss" title="বাদ পড়েছে">${esc(o.e)}</span>`:o.t==='space'?`<span class="w-miss" title="অতিরিক্ত স্পেস">[␣]</span>`:`<span class="w-tail">${esc(o.w)}</span>`);
+  const bad=an.ops.filter(o=>o.t==='wrong'||o.t==='extra'||o.t==='skip');
+  const list=bad.slice(0,80).map(o=>o.t==='wrong'?`<span><b>${esc(o.w)}</b> → ${esc(o.e)}</span>`:o.t==='extra'?`<span><b>${esc(o.w)}</b> → (অতিরিক্ত)</span>`:`<span>(বাদ) → <b>${esc(o.e)}</b></span>`).join('');
+  const any=bad.length||an.spaces;
+  return `<div class="review">${parts.join(' ')}</div>`+
+    (any?`${bad.length?`<div class="misslist">${list}</div>`:''}${bad.length>80?`<div class="muted small">আরও ${bad.length-80}টি ভুল শব্দ আছে।</div>`:''}`:'<div class="muted small" style="margin-top:10px">কোনো ভুল নেই।</div>');
+}
+function renderResult(r){
+  const tw=r.targetWpm??20,ta=r.targetAccuracy??95;
+  const outcome=r.pass?'<span class="pill good">পাস</span>':'<span class="pill bad">ফেল</span>';
+  const elapsed=Math.max(0,Math.floor(r.elapsedSeconds||0));
+  const expN=splitWords(r.expectedText).length,typN=splitWords(r.typedText).length;
+  const pct=expN?Math.min(100,Math.round(typN/expN*100)):0;
+  const reasonText={complete:'প্যাসেজ টাইপ সম্পন্ন',timeout:'সময় শেষ',manual:'ম্যানুয়ালি শেষ'}[r.reason]||'—';
+  const wordWpm=(r.elapsedSeconds>0)?(r.correctWords||0)/(r.elapsedSeconds/60):0;
+  const modern=r.algo===2;
+  const why=[];
+  if(r.speedPass===false)why.push(`গতি লক্ষ্যের চেয়ে কম (${fmt(r.speed,D())} WPM, লক্ষ্য ${tw} WPM)`);
+  if(r.accuracyPass===false)why.push(`Accuracy লক্ষ্যের চেয়ে কম (${fmt(r.accuracy,D())}%, লক্ষ্য ${ta}%)`);
+  const mistakeCell=modern?`${r.errors} (ভুল শব্দ ${r.wrongWords}, বাদ ${r.skippedWords}, অতিরিক্ত ${r.extraWords}, স্পেস ${r.extraSpaces})`:`${r.errors}`;
+  $('resultPanel').innerHTML=`<div class="rule"></div>
+  <div class="section-head"><div><h2 class="title">পরীক্ষার ফলাফল</h2>${outcome}</div><button class="secondary no-print" onclick="window.print()">রিপোর্ট প্রিন্ট</button></div>
+  <div class="stats">
+    <div class="stat"><b>${fmt(r.speed,D())}</b><span>WPM (স্পেসসহ)</span></div>
+    <div class="stat"><b>${fmt(r.withoutSpaceWpm||0,D())}</b><span>WPM (স্পেস ছাড়া)</span></div>
+    <div class="stat"><b>${fmt(wordWpm,D())}</b><span>WPM (Word-based, সঠিক শব্দ)</span></div>
+    <div class="stat"><b>${fmt(r.accuracy,D())}%</b><span>Accuracy (শব্দভিত্তিক)</span></div>
+  </div>
+  <div class="tablewrap" style="margin-top:14px"><table><tbody>
+    <tr><th>ভাষা</th><td>${r.lang==='bn'?'বাংলা':'ইংরেজি'}</td><th>সময়</th><td>${Math.floor(elapsed/60)} মিনিট ${elapsed%60} সেকেন্ড</td></tr>
+    <tr><th>প্যাসেজ</th><td>${esc(r.passageTitle)}</td><th>সমাপ্তি</th><td>${reasonText}</td></tr>
+    <tr><th>টাইপ করা হয়েছে</th><td>${typN} / ${expN} শব্দ (${pct}%)</td><th>অক্ষর (স্পেসসহ / ছাড়া)</th><td>${r.typed} / ${r.typedWithoutSpace||0}</td></tr>
+    <tr><th>মোট শব্দ</th><td>${r.completedWords||0}</td><th>সঠিক শব্দ</th><td>${r.correctWords||0}</td></tr>
+    <tr><th>মোট ভুল</th><td>${mistakeCell}</td><th>ভুলের হার</th><td>${fmt(r.errorRate,D())}%</td></tr>
+    <tr><th>CPM (স্পেসসহ)</th><td>${fmt(r.cpm,D())}</td><th>আপনার লক্ষ্য</th><td>${tw} WPM, ${ta}% Accuracy</td></tr>
+  </tbody></table></div>
+  <div class="blue-note" style="margin-top:14px">${r.pass?'আপনি নির্ধারিত লক্ষ্য পূরণ করেছেন।':'লক্ষ্য পূরণ হয়নি: '+(why.join('; ')||'শর্ত পূরণ হয়নি')+'।'}${modern?'':' (এটি পুরোনো গণনা পদ্ধতিতে সংরক্ষিত ফলাফল; নিচের লাল চিহ্ন নতুন পদ্ধতিতে দেখানো হয়েছে।)'}</div>
+  <h3 style="margin-top:18px">আপনার টাইপ করা লেখা</h3>
+  ${reviewHTML(r)}
+  <div class="actions no-print"><button onclick="newTest()">আবার পরীক্ষা দিন</button><button class="secondary" onclick="showPage('history')">ইতিহাস দেখুন</button></div>`;
+}
+function renderDashboard(){const count=history.length,passed=history.filter(x=>x.pass===true).length,avg=count?history.reduce((a,x)=>a+(x.cpm||0),0)/count:0,best=count?Math.max(...history.map(x=>x.cpm||0)):0;$('dashboardStats').innerHTML=`<div class="stat"><b>${count}</b><span>মোট পরীক্ষা</span></div><div class="stat"><b>${fmt(avg,D())}</b><span>গড় CPM</span></div><div class="stat"><b>${fmt(best,D())}</b><span>সেরা CPM</span></div><div class="stat"><b>${count?Math.round(passed/count*100):0}%</b><span>লক্ষ্য পূরণের হার</span></div>`;const recent=history.slice(0,5);$('recentResults').innerHTML=recent.length?`<div class="tablewrap"><table><thead><tr><th>তারিখ</th><th>ভাষা</th><th>CPM</th><th>Accuracy</th><th>ফল</th></tr></thead><tbody>${recent.map(r=>`<tr><td>${new Date(r.date).toLocaleString('bn-BD')}</td><td>${r.lang==='bn'?'বাংলা':'ইংরেজি'}</td><td>${fmt(r.cpm,D())}</td><td>${fmt(r.accuracy,D())}%</td><td>${r.pass===null?'<span class="pill warn">অনুশীলন</span>':r.pass?'<span class="pill good">লক্ষ্য পূরণ</span>':'<span class="pill bad">লক্ষ্য হয়নি</span>'}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">এখনো কোনো পরীক্ষা দেওয়া হয়নি। প্রথম পরীক্ষা শুরু করুন।</div>';refreshPassageSelects()}
+function renderHistory(){const lang=$('historyLang').value,out=$('historyOutcome').value;const rows=history.filter(r=>(lang==='all'||r.lang===lang)&&(out==='all'||(out==='pass'?r.pass===true:r.pass===false)));$('historyTable').innerHTML=rows.length?`<div class="tablewrap"><table><thead><tr><th>তারিখ</th><th>ভাষা</th><th>প্যাসেজ</th><th>CPM</th><th>WPM</th><th>Accuracy</th><th>ফল</th><th class="no-print">কাজ</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${new Date(r.date).toLocaleString('bn-BD')}</td><td>${r.lang==='bn'?'বাংলা':'ইংরেজি'}</td><td>${esc(r.passageTitle)}</td><td>${fmt(r.cpm,D())}</td><td>${fmt(r.speed,D())}</td><td>${fmt(r.accuracy,D())}%</td><td>${r.pass===null?'<span class="pill warn">অনুশীলন</span>':r.pass?'<span class="pill good">পাস</span>':'<span class="pill bad">ফেল</span>'}</td><td class="no-print"><button class="secondary" onclick="viewResult('${r.id}')">বিস্তারিত</button> <button class="danger" onclick="deleteResult('${r.id}')">মুছুন</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">এই ফিল্টারে কোনো ফলাফল নেই।</div>'}
+function viewResult(id){const r=history.find(x=>x.id===id);if(!r)return;showPage('test');$('setupPanel').classList.add('hidden');$('activePanel').classList.add('hidden');$('resultPanel').classList.remove('hidden');$('testStatus').textContent='ইতিহাস';renderResult(r)}
+function deleteResult(id){if(!confirm('এই ফলাফলটি মুছবেন?'))return;history=history.filter(x=>x.id!==id);saveJSON(STORE.history,history);renderHistory();renderDashboard()}
+function clearHistory(){if(!confirm('সব পরীক্ষার ইতিহাস স্থায়ীভাবে মুছে ফেলবেন?'))return;history=[];saveJSON(STORE.history,history);renderHistory();renderDashboard();toast('ইতিহাস মুছে ফেলা হয়েছে')}
+function renderPassages(){
+  if($('adminVersion'))$('adminVersion').textContent=backendMeta.version?'সংস্করণ '+backendMeta.version:'';
+  const grouped={bn:passages.filter(p=>p.lang==='bn'),en:passages.filter(p=>p.lang==='en')};
+  $('passageList').innerHTML=['bn','en'].map(lang=>`<h3>${lang==='bn'?'বাংলা প্যাসেজ':'ইংরেজি প্যাসেজ'} (${grouped[lang].length})</h3><div class="tablewrap"><table><thead><tr><th>নাম</th><th>দৈর্ঘ্য</th><th>কাজ</th></tr></thead><tbody>${grouped[lang].map(p=>`<tr><td>${esc(p.title)}</td><td>${p.text.length} অক্ষর</td><td><button class="secondary" data-id="${esc(p.id)}" onclick="editPassage(this.dataset.id)">সম্পাদনা</button> <button class="danger" data-id="${esc(p.id)}" onclick="deletePassage(this.dataset.id)">মুছুন</button></td></tr>`).join('')}</tbody></table></div>`).join('');
+}
+function newPassage(){editorOriginalId=null;$('passageEditorTitle').textContent='নতুন প্যাসেজ';$('editId').value='';$('editTitle').value='';$('editLang').value='bn';$('editText').value='';$('passageEditor').classList.remove('hidden');$('editTitle').focus()}
+function editPassage(id){const p=passages.find(x=>x.id===id);if(!p)return;editorOriginalId=id;$('passageEditorTitle').textContent='প্যাসেজ সম্পাদনা';$('editId').value=id;$('editTitle').value=p.title;$('editLang').value=p.lang;$('editText').value=p.text;$('passageEditor').classList.remove('hidden');$('passageEditor').scrollIntoView({behavior:'smooth',block:'start'})}
+function cancelPassageEdit(){$('passageEditor').classList.add('hidden')}
+async function savePassage(){
+  const title=$('editTitle').value.trim(),lang=$('editLang').value,text=$('editText').value.trim();
+  if(!title||!text){toast('প্যাসেজের নাম ও লেখা দিন');return}
+  if(text.length>8000){toast('প্যাসেজ ৮০০০ অক্ষরের বেশি হতে পারবে না');return}
+  const btn=$('savePassageBtn');btn.disabled=true;btn.textContent='সংরক্ষণ হচ্ছে…';
+  try{
+    const d=await adminCall('savePassage',{passage:{id:editorOriginalId||'',lang,title,text}});
+    if(!d)return;
+    if(!d.ok){toast(d.message||'সংরক্ষণ করা যায়নি');return}
+    applyData(d.data);renderPassages();cancelPassageEdit();toast('প্যাসেজ সংরক্ষিত হয়েছে (সবার জন্য)');
+  }catch(e){toast('সার্ভারে যোগাযোগ করা যায়নি')}
+  finally{btn.disabled=false;btn.textContent='সংরক্ষণ'}
+}
+async function deletePassage(id){
+  const p=passages.find(x=>x.id===id);if(!p)return;
+  if(!confirm(`“${p.title}” প্যাসেজটি মুছবেন? এটি সবার জন্য মুছে যাবে।`))return;
+  try{
+    const d=await adminCall('deletePassage',{id});
+    if(!d)return;
+    if(!d.ok){toast(d.message||'মোছা যায়নি');if(d.error==='NOT_FOUND')adminRefresh();return}
+    applyData(d.data);renderPassages();toast('প্যাসেজ মুছে ফেলা হয়েছে');
+  }catch(e){toast('সার্ভারে যোগাযোগ করা যায়নি')}
+}
+function setSeg(id,v){const seg=$(id);seg.dataset.value=String(v);seg.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v===String(v)))}
+function pickSeg(btn){const seg=btn.parentElement;setSeg(seg.id,btn.dataset.v);if(seg.id==='themeSeg')applyTheme(btn.dataset.v);updateDirty()}
+function formState(){return {wpm:Number($('practiceWpm').value),acc:Number($('practiceAccuracy').value),theme:$('themeSeg').dataset.value,font:$('fontSeg').dataset.value,paste:$('pasteBlock').checked?'official':'allow'}}
+function updateDirty(){
+  const f=formState();
+  $('saveSettingsBtn').disabled=!(f.wpm!==goalWpm()||f.acc!==goalAcc()||f.theme!==appearance.theme||f.font!==String(appearance.font)||f.paste!==appearance.pasteMode);
+}
+function syncTestFont(){const el=$('testFontSize');if(el)el.value=String(appearance.font)}
+function loadSettingsUI(){
+  $('practiceWpm').value=goalWpm();
+  $('practiceAccuracy').value=goalAcc();
+  setSeg('themeSeg',appearance.theme);
+  setSeg('fontSeg',appearance.font);
+  $('pasteBlock').checked=appearance.pasteMode==='official';
+  applyTheme();updateDirty();
+}
+function saveSettings(){
+  const f=formState();
+  if(!Number.isFinite(f.wpm)||f.wpm<1||f.wpm>300||!Number.isFinite(f.acc)||f.acc<1||f.acc>100){toast('বৈধ WPM (১–৩০০) ও Accuracy (১–১০০) লিখুন');return}
+  if(f.wpm!==goalWpm())settings.practiceWpm=f.wpm;
+  if(f.acc!==goalAcc())settings.practiceAccuracy=f.acc;
+  appearance.theme=f.theme;appearance.font=Number(f.font);appearance.pasteMode=f.paste;
+  saveJSON(STORE.settings,settings);saveJSON(STORE.appearance,appearance);
+  syncTestFont();renderGoals();loadSettingsUI();toast('সেটিংস সংরক্ষিত হয়েছে');
+}
+function resetSettings(){
+  if(!confirm('সব সেটিংস ডিফল্টে ফিরিয়ে দেবেন?'))return;
+  delete settings.practiceWpm;delete settings.practiceAccuracy;appearance={...DEFAULT_APPEARANCE};
+  saveJSON(STORE.settings,settings);saveJSON(STORE.appearance,appearance);
+  syncTestFont();renderGoals();loadSettingsUI();toast('ডিফল্ট সেটিংস ফিরেছে');
+}
+function applyTheme(t){const theme=t||appearance.theme;if(theme==='dark'){document.documentElement.style.setProperty('--bg','#101923');document.documentElement.style.setProperty('--panel','#172330');document.documentElement.style.setProperty('--text','#e6edf5');document.documentElement.style.setProperty('--muted','#a6b5c5');document.documentElement.style.setProperty('--line','#304253');document.documentElement.style.setProperty('--soft','#20384d');document.documentElement.style.setProperty('--shadow','0 8px 26px #00000020')}else{for(const [k,v] of Object.entries({'--bg':'#f3f6fa','--panel':'#fff','--text':'#172536','--muted':'#66768a','--line':'#dce4ed','--soft':'#eaf3fb','--shadow':'0 8px 26px #1438580c'}))document.documentElement.style.setProperty(k,v)}}
+function adminSetUI(){
+  const a=!!adminToken;
+  $('adminLoginCard').classList.toggle('hidden',a);$('adminPanel').classList.toggle('hidden',!a);
+  $('adminBackendNote').classList.toggle('hidden',!!BACKEND_URL);$('adminLoginBtn').disabled=!BACKEND_URL;
+}
+function renderAdmin(){adminSetUI();if(adminToken)renderPassages()}
+async function api(action,payload,opts){
+  if(!BACKEND_URL)throw new Error('NO_BACKEND');
+  const o=opts||{},ctrl=new AbortController(),t=setTimeout(()=>ctrl.abort(),o.timeout||20000);
+  try{
+    const res=o.get
+      ?await fetch(BACKEND_URL+(BACKEND_URL.includes('?')?'&':'?')+new URLSearchParams({action,...(payload||{})}),{signal:ctrl.signal,cache:'no-store'})
+      :await fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,...(payload||{})}),signal:ctrl.signal});
+    return await res.json();
+  }finally{clearTimeout(t)}
+}
+async function adminCall(action,payload){
+  const d=await api(action,{token:adminToken,...(payload||{})});
+  if(d&&d.error==='UNAUTHORIZED'){adminToken='';try{sessionStorage.removeItem(ADMIN_KEY)}catch(e){}adminSetUI();toast(d.message||'সেশন শেষ হয়েছে, আবার লগইন করুন');return null}
+  return d;
+}
+async function adminLogin(){
+  const pass=$('adminPass').value;
+  if(!pass){toast('পাসওয়ার্ড দিন');return}
+  const btn=$('adminLoginBtn');btn.disabled=true;btn.textContent='যাচাই হচ্ছে…';
+  try{
+    const d=await api('login',{password:pass});
+    if(!d||!d.ok){toast((d&&d.message)||'লগইন করা যায়নি');return}
+    adminToken=d.token;try{sessionStorage.setItem(ADMIN_KEY,adminToken)}catch(e){}
+    $('adminPass').value='';adminSetUI();renderPassages();toast('অ্যাডমিন হিসেবে লগইন হয়েছে');
+    loadBackendData(true);
+  }catch(e){toast('সার্ভারে যোগাযোগ করা যায়নি')}
+  finally{btn.disabled=!BACKEND_URL;btn.textContent='লগইন'}
+}
+function adminLogout(){
+  if(BACKEND_URL)api('logout',{token:adminToken}).catch(()=>{});
+  adminToken='';try{sessionStorage.removeItem(ADMIN_KEY)}catch(e){}
+  adminSetUI();try{history.replaceState(null,'',location.pathname+location.search)}catch(e){location.hash=''}showPage('home');toast('লগআউট হয়েছে');
+}
+async function adminRefresh(){
+  const ok=await loadBackendData(true);
+  if(ok){renderPassages();toast('হালনাগাদ হয়েছে')}else toast('সার্ভার থেকে আনা যায়নি');
+}
+function togglePwForm(){$('pwForm').classList.toggle('hidden')}
+async function changePw(){
+  const o=$('pwOld').value,n=$('pwNew').value,n2=$('pwNew2').value;
+  if(n.length<8){toast('নতুন পাসওয়ার্ড কমপক্ষে ৮ অক্ষরের হতে হবে');return}
+  if(n!==n2){toast('দুই জায়গায় নতুন পাসওয়ার্ড মেলেনি');return}
+  try{
+    const d=await adminCall('changePassword',{oldPassword:o,newPassword:n});
+    if(!d)return;
+    if(!d.ok){toast(d.message||'পাসওয়ার্ড বদলানো যায়নি');return}
+    adminToken=d.token;try{sessionStorage.setItem(ADMIN_KEY,adminToken)}catch(e){}
+    ['pwOld','pwNew','pwNew2'].forEach(i=>$(i).value='');$('pwForm').classList.add('hidden');toast('পাসওয়ার্ড বদলানো হয়েছে');
+  }catch(e){toast('সার্ভারে যোগাযোগ করা যায়নি')}
+}
+function renderStatus(){
+  const el=$('dataStatus');if(!el)return;const m=backendMeta;
+  el.textContent=!BACKEND_URL?'ব্যাকএন্ড সংযুক্ত নয় — নমুনা প্যাসেজ ব্যবহার হচ্ছে'
+    :m.state==='offline'?'অফলাইন — সংরক্ষিত কপি ব্যবহার হচ্ছে'
+    :m.state==='failed'?'সার্ভার থেকে প্যাসেজ আনা যায়নি — নমুনা প্যাসেজ ব্যবহার হচ্ছে'
+    :'';
+}
+function applyData(d){
+  const list=sanitizePassages(d&&d.passages);
+  if(!list.length)return false;
+  passages=list;CFG=sanitizeCfg(d.config);
+  backendMeta={version:String(d.version||''),state:'ok'};
+  saveJSON(STORE.backend,{version:backendMeta.version,passages:list,config:d.config||{},savedAt:Date.now()});
+  renderGoals();refreshPassageSelects();renderStatus();
+  if(!$('page-history').classList.contains('hidden'))renderHistory();
+  if(adminToken&&!$('page-passages').classList.contains('hidden'))renderPassages();
+  return true;
+}
+async function loadBackendData(force){
+  if(!BACKEND_URL){renderStatus();return false}
+  const prev=backendMeta.version;
+  backendMeta.state='loading';renderStatus();
+  try{
+    const d=await api('data',{v:force?'':prev},{get:true,timeout:20000});
+    if(!d||!d.ok)throw new Error('BAD_RESPONSE');
+    if(d.unchanged){backendMeta={version:prev,state:'ok'};renderStatus();return true}
+    if(!applyData(d))throw new Error('EMPTY');
+    return true;
+  }catch(e){backendMeta.state=prev?'offline':'failed';renderStatus();return false}
+}
+function cancelActiveTest(){
+  clearInterval(timerHandle);timerHandle=null;
+  if(currentTest&&!currentTest.finished)currentTest.finished=true;
+  currentTest=null;remainingMs=0;endAt=0;
+  const active=$('activePanel'),setup=$('setupPanel'),result=$('resultPanel');
+  if(active)active.classList.add('hidden');
+  if(setup)setup.classList.remove('hidden');
+  if(result)result.classList.add('hidden');
+  const status=$('testStatus');if(status)status.textContent='বাতিল';
+  toast('পরীক্ষা বাতিল হয়েছে; ফলাফল ইতিহাসে যোগ হয়নি');
+}
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&currentTest&&!currentTest.finished)cancelActiveTest()});
+window.addEventListener('beforeunload',()=>{if(currentTest&&!currentTest.finished)clearInterval(timerHandle)});
+function routeHash(){if(location.hash.toLowerCase()==='#admin')showPage('passages')}
+function init(){applyTheme();syncTestFont();renderGoals();refreshPassageSelects();renderDashboard();loadSettingsUI();renderHistory();adminSetUI();renderStatus();loadBackendData();routeHash()}
+document.querySelectorAll('#nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+window.addEventListener('hashchange',routeHash);
+init();
+</script>
+</body>
+</html>
